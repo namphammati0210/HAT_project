@@ -9,7 +9,7 @@ const getVehicles = async (req, res) => {
   try {
     const result = await getAllVehicles();
 
-    res.status(200).send({ data: result.data });
+    res.status(200).send(result.data);
   } catch (error) {
     res.status(500).send(error);
   }
@@ -23,7 +23,7 @@ const getVehicle = async (req, res) => {
 
     const result = await getVehicleById(vehicleId);
 
-    res.status(200).send({ data: result.data });
+    res.status(200).send(result.data);
   } catch (error) {
     res.status(500).send(error);
   }
