@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import Sidebar from "components/Sidebar/Sidebar";
-import Header from "components/Header/Header";
+import Sidebar from "layouts/main/components/Sidebar/Sidebar";
+import Header from "layouts/main/components/Header/Header";
 
 const MainLayout = () => (
   <div className="h-[100vh] bg-[#131116] text-white">

@@ -1,3 +1,4 @@
+import { PropTypes } from "prop-types";
 import { format } from "date-fns";
 
 const alertLevels = {
@@ -108,5 +109,9 @@ const EventLogTable = ({ data }) => (
     </div>
   </div>
 );
+
+EventLogTable.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default EventLogTable;
