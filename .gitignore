@@ -6,3 +6,6 @@ secrets.js
 npm-debug.log
 yarn-error.log
 .vscode
+.env
+# Local Netlify folder
+.netlify

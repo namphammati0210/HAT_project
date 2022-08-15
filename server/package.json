@@ -5,7 +5,8 @@
   "scripts": {
     "test": "jest",
     "start": "node ./bin/www",
-    "start:dev": "nodemon ./bin/www"
+    "start:dev": "nodemon ./bin/www",
+    "deploy": "git subtree push --prefix server heroku master"
   },
   "dependencies": {
     "axios": "^0.27.2",
