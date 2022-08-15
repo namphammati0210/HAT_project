@@ -6,7 +6,7 @@ https://namphammati0210-makes-great-sites.netlify.app
 
 ### Link API Document
 
-https://hat-test-project.herokuapp.com
+https://hat-test-project.herokuapp.com/docs
 
 ## 🛠️ Technologies Used
 
