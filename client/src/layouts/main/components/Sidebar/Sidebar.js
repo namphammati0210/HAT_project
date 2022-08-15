@@ -9,7 +9,7 @@ const Sidebar = () => (
   <aside className="min-w-[100px] h-[100vh] bg-[#332D41] py-5 flex flex-col items-center gap-2">
     <NavLink to="" end>
       {({ isActive }) => (
-        <div className="flex flex-col items-center font-medium text-[16pt]">
+        <div className="flex flex-col items-center font-semibold ">
           <img src={isActive ? selectedStatusIcon : statusIcon} alt="" />
           Status
         </div>
@@ -18,7 +18,7 @@ const Sidebar = () => (
 
     <NavLink to="/eventlog">
       {({ isActive }) => (
-        <div className="flex flex-col items-center font-medium text-[16pt]">
+        <div className="flex flex-col items-center font-semibold ">
           <img src={isActive ? selectedLogIcon : logIcon} alt="" />
           Log
         </div>
