@@ -3,6 +3,7 @@ const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 const swaggerUi = require("swagger-ui-express");
+const cors = require("cors");
 
 const indexRouter = require("./src/routes/index");
 const vehicleRouter = require("./src/routes/api/vehicle.route");
@@ -12,6 +13,7 @@ const swaggerSpec = require("./src/document/swagger.document");
 
 const app = express();
 
+app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

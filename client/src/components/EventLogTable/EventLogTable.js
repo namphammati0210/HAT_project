@@ -41,38 +41,38 @@ const formatDate = (date) => {
 
 const EventLogTable = ({ data }) => (
   <div className="flex flex-col">
-    <div className="inline-block min-w-full py-2 align-middle ">
+    <div className="inline-block min-w-full align-middle ">
       <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
         <table className="min-w-full divide-y divide-gray-300">
           <thead className="bg-[#332D41] h-[75px]">
             <tr>
               <th
                 scope="col"
-                className="py-3.5 pl-4 pr-3 text-left  font-semibold text-[#fff] sm:pl-6"
+                className="py-3.5 pl-4 pr-3 text-left text-[16pt] font-medium text-[#fff] sm:pl-6"
               >
                 Level
               </th>
               <th
                 scope="col"
-                className="px-3 py-3.5 text-left  font-semibold text-[#fff]"
+                className="px-3 py-3.5 text-left text-[16pt] font-medium  text-[#fff]"
               >
                 Date
               </th>
               <th
                 scope="col"
-                className="px-3 py-3.5 text-left  font-semibold text-[#fff]"
+                className="px-3 py-3.5 text-left text-[16pt] font-medium text-[#fff]"
               >
                 Resolved?
               </th>
               <th
                 scope="col"
-                className="px-3 py-3.5 text-left  font-semibold text-[#fff]"
+                className="px-3 py-3.5 text-left text-[16pt] font-medium text-[#fff]"
               >
                 Resolve Date
               </th>
               <th
                 scope="col"
-                className="px-3 py-3.5 text-left  font-semibold text-[#fff]"
+                className="px-3 py-3.5 text-left text-[16pt] font-medium text-[#fff]"
               >
                 Message
               </th>

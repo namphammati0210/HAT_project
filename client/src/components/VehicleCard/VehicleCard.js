@@ -8,7 +8,7 @@ const VehicleCard = ({ name, coordinate, altitude, battery }) => (
   <div>
     <div className="flex items-center gap-4  py-4 bg-[#332D41] rounded-tl-lg rounded-tr-lg px-3">
       <div className="w-8 h-8 rounded-full bg-[#D0BCFF]" />
-      <p className="uppercase">{name}</p>
+      <p className="uppercase text-[16pt] font-medium">{name}</p>
     </div>
 
     <div className="flex flex-col bg-[#4A4458] rounded-bl-lg rounded-br-lg px-3 py-4 h-[165px] justify-between">

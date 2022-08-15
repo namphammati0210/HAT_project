@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
 
+import Sidebar from "components/Sidebar/Sidebar";
+import Header from "components/Header/Header";
+
 const MainLayout = () => (
   <div className="h-[100vh] bg-[#131116] text-white">
-    <header className="w-full bg-[#332D41] border border-[#131116] p-5">
-      Header
-    </header>
+    <Header />
     <main className="flex">
-      <aside className="w-[100px] h-[100vh] bg-[#332D41] py-5">sidebar</aside>
+      <Sidebar />
       <section className="px-5 pt-5 w-full bg-[#131116]">
         <Outlet />
       </section>

@@ -7,12 +7,7 @@ import { fetchEventLogs } from "services/eventLog.service";
 
 const EventLog = () => {
   const [loading, setLoading] = useState(false);
-  console.log("🚀 ~ file: EventLog.js ~ line 10 ~ EventLog ~ loading", loading);
   const [eventLogs, setEventLogs] = useState([]);
-  console.log(
-    "🚀 ~ file: EventLog.js ~ line 11 ~ EventLog ~ eventLogs",
-    eventLogs
-  );
 
   const getEventLogs = async () => {
     setLoading(true);
@@ -29,7 +24,22 @@ const EventLog = () => {
     getEventLogs();
   }, []);
 
-  return <>{eventLogs && <EventLogTable data={eventLogs} />}</>;
+  return (
+    <>
+      {loading ? (
+        <div className="w-[100vw] flex items-center justify-center h-[100vh]">
+          <ClipLoader
+            color={"#fff"}
+            loading={loading}
+            cssOverride={{ display: "block" }}
+            size={150}
+          />
+        </div>
+      ) : (
+        <>{eventLogs && <EventLogTable data={eventLogs} />}</>
+      )}
+    </>
+  );
 };
 
 export default EventLog;
