@@ -20,7 +20,7 @@ const Sidebar = () => (
       {({ isActive }) => (
         <div className="flex flex-col items-center font-medium text-[16pt]">
           <img src={isActive ? selectedLogIcon : logIcon} alt="" />
-          Vehicle
+          Log
         </div>
       )}
     </NavLink>
